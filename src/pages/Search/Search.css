@@ -1,0 +1,49 @@
+.search-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.search-welcome {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--black-color);
+}
+
+.paw-icon {
+    font-size: 3rem;
+    color: var(--web-color);
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.search-welcome h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.search-welcome p {
+    font-size: 1.6rem;
+    color: var(--light-black-color);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
