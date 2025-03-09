@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/paw-folio/static/css/main.9c619d1d.css",
-    "main.js": "/paw-folio/static/js/main.7433a84d.js",
+    "main.js": "/paw-folio/static/js/main.76e83d55.js",
     "static/media/about-img.png": "/paw-folio/static/media/about-img.d05f68eebf82fda85018.png",
     "static/media/logo.png": "/paw-folio/static/media/logo.717f7d1513217755c729.png",
     "static/media/cover_not_found.jpg": "/paw-folio/static/media/cover_not_found.69846940c7af3e651508.jpg",
@@ -9,10 +9,10 @@
     "static/media/loader.svg": "/paw-folio/static/media/loader.413570d39b3c75d6da313d4ca9fb7f3b.svg",
     "index.html": "/paw-folio/index.html",
     "main.9c619d1d.css.map": "/paw-folio/static/css/main.9c619d1d.css.map",
-    "main.7433a84d.js.map": "/paw-folio/static/js/main.7433a84d.js.map"
+    "main.76e83d55.js.map": "/paw-folio/static/js/main.76e83d55.js.map"
   },
   "entrypoints": [
     "static/css/main.9c619d1d.css",
-    "static/js/main.7433a84d.js"
+    "static/js/main.76e83d55.js"
   ]
 }
