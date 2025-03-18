@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AppProvider>
     <FavoritesProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/paw-folio">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { FaBook, FaSearch, FaHeart } from 'react-icons/fa';
+import { FaBook, FaSearch, FaStar } from 'react-icons/fa';
 import './Home.css';
 
 const Home = () => {
@@ -34,9 +34,9 @@ const Home = () => {
                             <p>Get comprehensive book details</p>
                         </div>
                         <div className='feature-card'>
-                            <FaHeart className='feature-icon' />
-                            <h3>User Friendly</h3>
-                            <p>Simple and cozy interface</p>
+                            <FaStar className='feature-icon' />
+                            <h3>Favourites</h3>
+                            <p>Save and organise your favourite books</p>
                         </div>
                     </div>
                 </div>
