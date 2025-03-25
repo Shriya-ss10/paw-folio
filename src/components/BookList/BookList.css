@@ -1,0 +1,101 @@
+.booklist,
+.book-details {
+  padding: 3rem 3rem;
+  background: var(--pink-color);
+}
+
+.booklist-content {
+  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.book-item {
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  background-color: var(--grey-color);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px 0px;
+  transition: var(--transition);
+}
+.book-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+}
+.book-item-img img {
+  max-width: 180px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+.book-item-info {
+  margin-top: 2rem;
+  font-family: "poppins", sans-serif;
+}
+.book-item-info-item.title {
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+.book-item-info-item.author {
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+.book-item-info-item:not(.book-item-info-item.title) span:last-child {
+  opacity: 0.8;
+}
+.book-item-info-item.publish-year {
+  opacity: 0.6;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .booklist-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .book-item {
+    padding: 2rem 1.5rem;
+  }
+
+  .book-item-img img {
+    max-width: 150px;
+  }
+
+  .book-item-info-item.title {
+    font-size: 1.6rem;
+  }
+
+  .book-item-info-item.author {
+    font-size: 1.4rem;
+  }
+
+  .section-title {
+    margin-top: 8rem;  
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .booklist-content {
+    padding: 0 1rem;
+  }
+
+  .book-item {
+    padding: 1.5rem 1rem;
+  }
+
+  .book-item-img img {
+    max-width: 130px;
+  }
+
+  .section-title {
+    margin-top: -3rem;
+    font-size: 1.8rem;
+  }
+}

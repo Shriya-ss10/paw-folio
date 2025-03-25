@@ -1,0 +1,166 @@
+.about {
+  padding: 5rem 0 0 0;
+  background: var(--pink-color);
+  min-height: 89vh;
+  margin-top: 11vh;
+}
+
+.container {
+  scale: 1.08;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-icon {
+  font-size: 3rem;
+  color: var(--web-color);
+}
+
+.about-logo {
+  width: 7%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.about-main-title {
+  font-size: 3rem;
+  color: var(--black-color);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 30% 35% 30%;
+  gap: 2rem;
+  align-items: start;
+  padding: 1rem 2rem;
+}
+
+.about-img {
+  text-align: center;
+}
+
+.about-img img {
+  max-width: 85%;
+  animation: gentle-rotate 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.about-title {
+  margin-bottom: 1.2rem;
+  color: var(--black-color)!important;
+}
+
+.about-description {
+  padding: 0 1rem;
+}
+
+.about-description p {
+  line-height: 1.7;
+  color: var(--light-black-color);
+  font-size: 1.6rem;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.feature-item span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+  display: block;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--web-color);
+  margin-bottom: 0.5rem;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease-out 0.3s both;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gentle-rotate {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .about-header {
+    margin-bottom: 0.5rem;
+  }
+  .about-content {
+    grid-template-columns: 2fr;
+    gap: 0rem;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .about-text {
+    padding: 1rem;
+  }
+
+  .about-logo {
+    display: none;
+  }
+}

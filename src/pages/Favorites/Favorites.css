@@ -1,0 +1,106 @@
+.favorites {
+  padding: 3rem 0;
+  background: var(--pink-color);
+  min-height: 100vh;
+  margin-top: 11vh;
+}
+
+.favorites-header {
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+
+.fav-container {
+  padding: 0 3rem;
+}
+
+.star-icon {
+  font-size: 2.5rem;
+  color: #ffd700;
+  animation: float 3s ease-in-out infinite;
+}
+
+.favorites-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--black-color);
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.favorite-card {
+  background: var(--grey-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.favorite-card img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.favorite-card h3 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: var(--black-color);
+}
+
+.favorite-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.favorite-actions a,
+.favorite-actions button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.favorite-actions a {
+  background: linear-gradient(135deg, var(--web-color), #e5b394);
+  color: var(--black-color);
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(239, 204, 177, 0.3);
+}
+
+.favorite-actions button {
+  background: transparent;
+  border: 2px solid #ff6b6b;
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.favorite-actions a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 204, 177, 0.4);
+}
+
+.favorite-actions button:hover {
+  background: linear-gradient(135deg, #ff6b6b, #ff8585);
+  border-color: transparent;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
+}
+
+.no-favorites {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--light-black-color);
+  margin-top: 2rem;
+}
